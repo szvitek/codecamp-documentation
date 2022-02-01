@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    flex-direction: row;
+  }
+}
