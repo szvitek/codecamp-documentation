@@ -4,8 +4,86 @@ body {
   background-color: aliceblue;
 }
 
+#navbar {
+  height: 30vh;
+  overflow: hidden scroll;
+  border-bottom: 1px solid black;
+}
+
+nav > header {
+  margin-top: 25px;
+  text-align: center;
+  padding: 10px;
+  font-size: x-large;
+  font-weight: bold;
+  color: brown;
+}
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  height: 40px;
+  border-top: 1px solid black;
+}
+
+nav > ul > li:hover {
+  background-color: brown;
+  color: white;
+}
+
+nav > ul > li > a {
+  display: block;
+  width: 100%;
+  padding: 5px 15px;
+  line-height: 2;
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+main {
+  text-align: justify;
+  padding: 20px 10px;
+}
+
+main header {
+  color: brown;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+code {
+  display: block;
+  background-color: antiquewhite;
+  color: grey;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     flex-direction: row;
+    float: right;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 1px solid black;
+    width: 250px;
+    height: unset;
+    overflow: unset;
+    border-bottom: unset;
+  }
+
+  main {
+    margin-left: 250px;
+    padding: 10px 50px;
   }
 }
